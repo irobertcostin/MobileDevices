@@ -1,0 +1,103 @@
+input , button {
+    display: block;
+}
+
+body {
+    font-family: 'Amaranth';
+    background-color: rgb(207, 255, 255);
+    text-align: center;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* border: 2px solid red; */
+}
+
+.newoffers {
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(1, 11, 77);
+    color: white;
+    border-radius: 10px;
+    padding: 25px;
+
+    width: 90%;
+
+}
+
+.newoffers div {
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    text-align: left;
+}
+
+input {
+    width: 90%;
+
+}
+
+.btn {
+    width: 150px;
+    height: 40px;
+    /* border: 2px solid red; */
+    margin-left: 60px;
+    border: none;
+    color: black;
+    border-radius: 5px;
+    background-color: orange;
+    margin-top: 10px;
+}
+
+.newoffers button:hover {
+    background-color: red;
+    color: white;
+    /* width: 90%; */
+}
+
+.titluri {
+    background-color: rgb(12, 255, 24);
+}
+
+.tabelul {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabel {
+    width: 90%;
+    border: 2px solid black;
+    border-radius: 5px;
+
+    width: 100%;
+}
+
+.delete {
+    display: block;
+    padding: 7px;
+    border: none;
+    color: black;
+    border-radius: 5px;
+    background-color: orange;
+    margin-top: 10px;
+}
+
+.delete:hover {
+    background-color: red;
+    color: white;
+    /* width: 90%; */
+}
+
+
+.selectie {
+    color:magenta
+}
