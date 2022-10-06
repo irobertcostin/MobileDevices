@@ -25,12 +25,6 @@ function adaugaInTabel (arr) {
 
 function preiaElemente () {
 
-let maker = document.querySelector(".marca")
-let model = document.querySelector(".model")
-let memory = document.querySelector(".memorie")
-let size = document.querySelector(".stocare")
-let color = document.querySelector(".culoare")
-
 let mobil = {
     marca: maker.value,
     model: model.value,
@@ -85,4 +79,26 @@ function eliminaElemente(arr,parametru) {
     return nou;
 }
 
+function resetRows(){
+    maker.value ="";
+    model.value ="";
+    memory.value ="";
+    size.value ="";
+    color.value ="";
+}
 
+function getHandyByModel (arr,model) {
+
+    let x = "";
+
+    for (i=0;i<arr.length;i++){
+
+        if(arr[i].model == model) {
+            x = arr[i];
+        }
+
+    }
+
+return x;
+
+}

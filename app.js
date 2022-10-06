@@ -5,6 +5,13 @@ let selectieChange = "";
 
 let stergere = document.querySelector(".delete")
 
+let maker = document.querySelector(".marca")
+let model = document.querySelector(".model")
+let memory = document.querySelector(".memorie")
+let size = document.querySelector(".stocare")
+let color = document.querySelector(".culoare")
+
+let editare = document.querySelector(".edit")
 
 creazaButon.addEventListener("click", () => {
 
@@ -22,7 +29,7 @@ creazaButon.addEventListener("click", () => {
     }
 
 
-    
+    resetRows();
 
     // let inputs = document.querySelectorAll(`.marca , .model , .memorie , . stocare , .culoare`)
     // inputs.forEach(input => {
@@ -50,6 +57,15 @@ selection.addEventListener("click", (e) => {
     }
 
 
+    let telefon = getHandyByModel(handys,obiectSelectat);
+
+    maker.value = telefon.marca;
+    model.value = telefon.model;
+    memory.value = telefon.memorieRam;
+    size.value = telefon.stocare;
+    color.value = telefon.culoare;
+
+
 })
 
 
@@ -61,5 +77,9 @@ adaugaInTabel(handys);
 
 }
 )
+
+editare.addEventListener("click", () => {
+
+})
 
 adaugaInTabel(handys);
