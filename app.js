@@ -15,7 +15,9 @@ let memory = document.querySelector(".memorie")
 let size = document.querySelector(".stocare")
 let color = document.querySelector(".culoare")
 
+// search
 
+let search = document.querySelector(".search")
 
 creazaButon.addEventListener("click", () => {
 
@@ -99,6 +101,13 @@ editare.addEventListener("click", () => {
     adaugaInTabel(handys);
 
     resetRows();
+
+})
+
+
+search.addEventListener("click", () =>{
+
+    adaugaInTabel(searchPhoneByModel(handys,model.value))
 
 })
 

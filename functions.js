@@ -110,3 +110,21 @@ function updatePhone (arr,model) {
     return arr;
 
 }
+
+
+function searchPhoneByModel (arr,model) {
+
+    let searched = [];
+
+    for(i=0;i<arr.length;i++){
+
+        if(arr[i].model.includes(model)){
+            searched.push(arr[i]);
+        }
+
+
+    }
+
+    return searched;
+
+}
