@@ -112,6 +112,12 @@ input {
     padding: 7px;
 }
 
+.edit:hover {
+    background-color: red;
+    color: white;
+    /* width: 90%; */
+}
+
 .search {
     border: none;
     color: black;
@@ -119,6 +125,12 @@ input {
     background-color: orange;
     margin-top: 10px;
     padding: 7px;
+}
+
+.search:hover {
+    background-color: red;
+    color: white;
+    /* width: 90%; */
 }
 
 .buttons {

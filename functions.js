@@ -102,3 +102,11 @@ function getHandyByModel (arr,model) {
 return x;
 
 }
+
+function updatePhone (arr,model) {
+
+    arr = eliminaElemente(handys,model.model);
+    arr.push(model);
+    return arr;
+
+}

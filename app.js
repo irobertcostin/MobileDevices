@@ -3,7 +3,11 @@ let selection = document.querySelector(".corp-tabel");
 let obiectSelectat="";
 let selectieChange = "";
 
+// delete
 let stergere = document.querySelector(".delete")
+
+// edit
+let editare = document.querySelector(".edit")
 
 let maker = document.querySelector(".marca")
 let model = document.querySelector(".model")
@@ -11,7 +15,7 @@ let memory = document.querySelector(".memorie")
 let size = document.querySelector(".stocare")
 let color = document.querySelector(".culoare")
 
-let editare = document.querySelector(".edit")
+
 
 creazaButon.addEventListener("click", () => {
 
@@ -75,10 +79,26 @@ stergere.addEventListener("click", () =>  {
 
 adaugaInTabel(handys);  
 
+resetRows();
+
 }
 )
 
 editare.addEventListener("click", () => {
+
+    let telefon = {
+        marca:maker.value,
+        model:model.value,
+        memorieRam:memory.value,
+        stocare:size.value,
+        culoare:color.value
+    }
+
+    handys = updatePhone(handys,telefon);
+
+    adaugaInTabel(handys);
+
+    resetRows();
 
 })
 
